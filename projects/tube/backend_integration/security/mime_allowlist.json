@@ -1,0 +1,95 @@
+{
+  "video": {
+    ".mp4": {
+      "mime": [
+        "video/mp4"
+      ],
+      "max_bytes": 21474836480
+    },
+    ".mov": {
+      "mime": [
+        "video/quicktime",
+        "video/mp4"
+      ],
+      "max_bytes": 21474836480
+    },
+    ".mkv": {
+      "mime": [
+        "video/x-matroska",
+        "video/webm"
+      ],
+      "max_bytes": 21474836480
+    },
+    ".webm": {
+      "mime": [
+        "video/webm",
+        "video/x-matroska"
+      ],
+      "max_bytes": 21474836480
+    }
+  },
+  "audio": {
+    ".mp3": {
+      "mime": [
+        "audio/mpeg"
+      ],
+      "max_bytes": 1073741824
+    },
+    ".wav": {
+      "mime": [
+        "audio/wav",
+        "audio/x-wav"
+      ],
+      "max_bytes": 2147483648
+    },
+    ".m4a": {
+      "mime": [
+        "audio/mp4",
+        "video/mp4"
+      ],
+      "max_bytes": 1073741824
+    }
+  },
+  "image": {
+    ".jpg": {
+      "mime": [
+        "image/jpeg"
+      ],
+      "max_bytes": 26214400
+    },
+    ".jpeg": {
+      "mime": [
+        "image/jpeg"
+      ],
+      "max_bytes": 26214400
+    },
+    ".png": {
+      "mime": [
+        "image/png"
+      ],
+      "max_bytes": 26214400
+    },
+    ".webp": {
+      "mime": [
+        "image/webp"
+      ],
+      "max_bytes": 26214400
+    }
+  },
+  "subtitle": {
+    ".srt": {
+      "mime": [
+        "text/plain",
+        "application/x-subrip"
+      ],
+      "max_bytes": 10485760
+    },
+    ".vtt": {
+      "mime": [
+        "text/vtt",
+        "text/plain"
+      ],
+      "max_bytes": 10485760
+    }
+  }
+}

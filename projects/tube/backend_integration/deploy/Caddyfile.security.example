@@ -1,0 +1,34 @@
+# Вставить в существующий Caddyfile после сверки домена и OAuth callback.
+# Не публикуйте внутренние порты PostgreSQL, Redis, ClamAV и AI Gateway.
+
+{$VIDEO_DOMAIN} {
+    encode zstd gzip
+
+    header {
+        -Server
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "camera=(), microphone=(self), geolocation=(), payment=()"
+        Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://oauth.yandex.ru https://oauth.vk.com; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-src 'self' https://oauth.yandex.ru https://oauth.vk.com"
+    }
+
+    @sensitive path /.env /.git/* /docker-compose* /backend_integration/*
+    respond @sensitive 404
+
+    reverse_proxy web:8000 {
+        header_up X-Forwarded-Proto https
+        header_up X-Forwarded-Host {host}
+        header_up X-Real-IP {remote_host}
+    }
+
+    log {
+        output file /var/log/caddy/zhuravli-video-access.log {
+            roll_size 50MiB
+            roll_keep 10
+            roll_keep_for 720h
+        }
+        format json
+    }
+}

@@ -1,0 +1,29 @@
+# Подключать дополнительным compose-файлом после теста.
+# Никаких ports: сервис доступен только во внутренней сети Docker.
+services:
+  clamav:
+    image: ${CLAMAV_IMAGE:-clamav/clamav:latest}
+    restart: unless-stopped
+    expose:
+      - "3310"
+    volumes:
+      - clamav-db:/var/lib/clamav
+    healthcheck:
+      test: ["CMD", "clamdscan", "--ping", "1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    security_opt:
+      - no-new-privileges:true
+
+  web:
+    environment:
+      CLAMAV_HOST: clamav
+      CLAMAV_PORT: "3310"
+    depends_on:
+      clamav:
+        condition: service_healthy
+
+volumes:
+  clamav-db:

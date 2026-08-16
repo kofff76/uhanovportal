@@ -1,0 +1,15 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d51f35"><meta name="description" content="Harmony Drive Tube — демонстрационный MVP."><title>Регистрация — Harmony Drive Tube</title><link rel="stylesheet" href="assets/styles.css"></head><body class="auth-page">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="topbar"><a class="brand" href="index.html" aria-label="Harmony Drive Tube — главная"><img src="assets/img/harmony-drive-tube-logo.svg" alt=""><span><strong>HARMONY DRIVE</strong><small>TUBE · видеоплатформа</small></span></a><div></div><div class="topbar__actions"><span class="mvp-badge">MVP DEMO</span><a class="topbar__link" href="index.html">На главную</a></div></header>
+<main id="main" class="auth-shell">
+  <section class="auth-visual"><img src="assets/img/hero-mountain.webp" alt="Группа ГармоньDrive"><div class="auth-visual__veil"></div><div class="auth-visual__copy"><p class="eyebrow">Демонстрационный контур</p><h1>HARMONY<br>DRIVE <span>TUBE</span></h1><p>Полная презентационная версия интерфейса: вход, профиль, кабинет, студия и действия пользователя — без подключения реального backend.</p></div></section>
+  <section class="auth-card"><div class="auth-card__head"><span class="mvp-pill">MVP · LOCAL DEMO</span><p class="eyebrow">Регистрация</p><h2>Новый аккаунт</h2><p>Создайте локальный профиль для показа пользовательского сценария.</p></div>
+      <form class="auth-form" data-demo-register>
+        <label>Имя<input name="name" value="Сергей" autocomplete="name" required></label>
+        <label>Электронная почта<input name="email" type="email" value="sergey@example.ru" autocomplete="email" required></label>
+        <label>Пароль<input name="password" type="password" value="123456" minlength="6" autocomplete="new-password" required></label>
+        <label class="auth-check"><input name="consent" type="checkbox" checked required><span>Согласен с правилами демонстрационной версии</span></label>
+        <button class="button button--blue auth-submit" type="submit">Создать демо-профиль <b>↗</b></button>
+        <div class="auth-status" data-auth-status>Аккаунт сохраняется только в localStorage этого браузера.</div>
+      </form><div class="auth-switch">Уже есть аккаунт? <a href="login.html">Уже есть аккаунт ↗</a></div></section>
+</main><script src="assets/api-client.js"></script><script src="assets/app.js"></script></body></html>
