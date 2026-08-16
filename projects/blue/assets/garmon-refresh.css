@@ -1,0 +1,292 @@
+
+/* Garmon Drive — WHITE / SILVER BLUE edition, 2026-08-16
+   Structure and interaction preserved; only palette, imagery and two-project presentation are changed.
+*/
+:root{
+  --gd-white:#ffffff;
+  --gd-paper:#f7fbff;
+  --gd-ice:#edf6fc;
+  --gd-silver:#dce7f0;
+  --gd-line:#cbd9e5;
+  --gd-ink:#111b25;
+  --gd-muted:#5d6d7b;
+  --gd-blue:#218fc8;
+  --gd-blue-deep:#0c6fa8;
+  --black:#f7fbff;
+  --red:#218fc8;
+  --wine:#d9edf8;
+  --ivory:#f4f9fd;
+  --white:#111b25;
+  --line:#111b2524;
+  color-scheme:light;
+}
+html,body{background:var(--gd-paper)!important;color:var(--gd-ink)!important}
+body{margin:0}
+::selection{background:#cfeeff;color:#0d2332}
+
+/* MAIN SHELL */
+.black-site,.black-page,.black-detail-page{background:var(--gd-paper)!important;color:var(--gd-ink)!important}
+.black-site{--red:var(--gd-blue);--white:var(--gd-ink)}
+.black-cursor-dot{background:var(--gd-blue)!important;mix-blend-mode:multiply!important}
+.black-topbar{
+  color:var(--gd-ink)!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.62) 72%,rgba(255,255,255,0))!important;
+  backdrop-filter:blur(12px) saturate(1.12);
+}
+.black-brand span,.black-topnav a span{color:var(--gd-blue)!important}
+.black-burger span{background:var(--gd-ink)!important}
+
+/* MENU */
+.black-menu-curtains{color:var(--gd-ink)!important;background:rgba(235,246,253,.58)!important}
+.black-menu-glass{background:linear-gradient(125deg,rgba(255,255,255,.95),rgba(219,239,250,.82))!important;border-color:rgba(33,143,200,.18)!important;box-shadow:inset 0 0 90px rgba(86,170,218,.12)!important}
+.black-menu-center h2 span,.black-menu-center nav a span,.black-menu-side span{color:var(--gd-blue)!important}
+.black-menu-close{color:var(--gd-ink)!important}
+
+/* HERO: use the supplied panoramic white/blue group photo as one clean image. */
+.black-hero-scene{background:#f6fbff!important;color:var(--gd-ink)!important}
+.black-scene-camera{background:#f6fbff!important}
+.black-layer-bg{
+  width:100%!important;height:100%!important;max-width:none!important;
+  object-fit:cover!important;object-position:center center!important;
+  top:0!important;left:0!important;
+  transform:translateZ(-80px) scale(1.035)!important;
+  filter:none!important;
+}
+.black-layer-mid{display:none!important}
+.black-hero-title{color:#152536!important;text-shadow:0 2px 0 rgba(255,255,255,.95),0 16px 45px rgba(87,142,174,.18)!important}
+.black-hero-title span{color:var(--gd-blue)!important}
+.black-hero-copy{color:#10202d!important;text-shadow:0 1px 14px rgba(255,255,255,.95)!important}
+.black-hero-copy p{color:var(--gd-blue-deep)!important}
+.black-scroll-next{color:#10202d!important}
+
+/* ABOUT */
+.black-about-section{background:#fff!important;color:var(--gd-ink)!important;border-top:1px solid #e6eef4}
+.black-about-title span,.black-about-copy span{color:var(--gd-blue)!important}
+.black-about-title strong,.black-about-copy{color:var(--gd-ink)!important}
+.black-about-copy a{border-color:var(--gd-blue)!important;color:var(--gd-ink)!important}
+
+/* TEAM */
+.black-team-section{background:#fff!important;color:var(--gd-ink)!important;border-color:#e5edf4!important}
+.black-team-bg-title{color:#f0f6fa!important}
+.black-team-bg-title span{color:#e3f2fb!important}
+.black-team-head p,.black-team-card p{color:var(--gd-blue-deep)!important}
+.black-team-head h2,.black-team-card h3,.black-team-index{color:var(--gd-ink)!important;text-shadow:none!important}
+.black-team-card{background:#fff!important;border:1px solid #dfebf3!important;box-shadow:0 24px 70px rgba(46,96,127,.08)!important}
+.black-team-card:after{background:linear-gradient(180deg,rgba(255,255,255,0) 54%,rgba(255,255,255,.94) 82%,#fff 100%)!important}
+.black-team-card img{object-fit:contain!important;object-position:center top!important;filter:none!important}
+.black-team-cursor{color:#fff!important;background:rgba(28,117,166,.92)!important;border-color:#fff!important;outline-color:rgba(33,143,200,.24)!important}
+
+/* EXACTLY TWO PROJECTS */
+.black-horizontal-section{height:200vh!important;background:#fff!important;color:var(--gd-ink)!important}
+.black-horizontal-head{color:var(--gd-ink)!important}
+.black-horizontal-head span{color:var(--gd-blue-deep)!important}
+.black-horizontal-head strong{max-width:11ch!important}
+.black-h-panel,.black-h-panel.black,.black-h-panel.red,.black-h-panel.ivory{
+  color:var(--gd-ink)!important;
+  background:linear-gradient(135deg,#ffffff 0%,#f3f9fd 56%,#e2f2fb 100%)!important;
+  border-right:1px solid #d7e5ef!important;
+}
+.black-h-panel.black{background:linear-gradient(135deg,#f4f9fd 0%,#e7f4fb 52%,#d6ebf7 100%)!important}
+.black-h-panel>span,.black-h-panel h2,.black-h-panel p,.black-h-panel>a{color:var(--gd-ink)!important}
+.black-h-panel>span,.black-h-arrow{color:var(--gd-blue-deep)!important}
+.black-h-panel img{object-fit:contain!important;object-position:right bottom!important;height:94%!important;width:auto!important;opacity:1!important;mix-blend-mode:normal!important;filter:none!important}
+.black-h-panel>a{border-bottom:1px solid rgba(17,27,37,.55)!important}
+.black-h-panel>a::after{content:""!important}
+
+/* ALBUM */
+.black-single-section{background:linear-gradient(135deg,#fff,#eef7fc)!important;color:var(--gd-ink)!important}
+.black-single-copy p,.black-single-copy h2 span{color:var(--gd-blue-deep)!important}
+.black-single-copy a{color:var(--gd-ink)!important;border-color:var(--gd-blue)!important}
+
+/* EVENTS / POSTER */
+.black-poster-section{background:#fff!important;color:var(--gd-ink)!important}
+.black-poster-card{background:linear-gradient(145deg,#eff8fd,#ddecf6)!important;color:var(--gd-ink)!important;border:1px solid #d2e2ed!important}
+.black-poster-card p,.black-poster-card h2 span{color:var(--gd-blue-deep)!important}
+.black-poster-image{background:#f5faff!important}
+.black-poster-image img{object-fit:contain!important;object-position:center!important;width:100%!important;height:100%!important}
+
+/* MEDIA */
+.black-video-section{background:#f5faff!important;color:var(--gd-ink)!important;border-top:1px solid #dce8f0}
+.black-video-box{background:#dceaf3!important;box-shadow:0 30px 80px rgba(43,91,121,.12)}
+.black-video-copy p,.black-video-copy h2 span{color:var(--gd-blue-deep)!important}
+
+/* SERVICES — same horizontal structure, white/ice palette only */
+.black-services-horizontal{background:#fff!important;color:var(--gd-ink)!important}
+.black-services-overlay{color:var(--gd-ink)!important}
+.black-services-overlay span,.black-services-overlay b{color:var(--gd-blue-deep)!important}
+.black-service-panel,.black-service-panel.service-tone-1,.black-service-panel.service-tone-2,.black-service-panel.service-tone-3,.black-service-panel.service-tone-4{
+  background:#fff!important;color:var(--gd-ink)!important;border-right:1px solid #dbe7ef!important;
+}
+.black-service-panel.service-tone-2{background:#edf7fc!important}
+.black-service-panel.service-tone-3{background:#f8fbfd!important}
+.black-service-panel.service-tone-4{background:#e7f3fa!important}
+.black-service-panel figure{background:#eef6fb!important;border:1px solid #d9e7f0!important}
+.black-service-panel figure:after{background:linear-gradient(180deg,rgba(255,255,255,0) 62%,rgba(231,243,250,.22))!important}
+.black-service-panel figure img{filter:none!important}
+.black-service-panel-number{color:rgba(35,143,199,.10)!important}
+.black-service-panel-copy p,.black-service-panel-copy dt{color:var(--gd-blue-deep)!important}
+.black-service-panel-copy a{color:var(--gd-ink)!important;border-color:var(--gd-blue)!important}
+.black-services-scroll-cue{color:var(--gd-blue-deep)!important}
+
+/* AUDIO */
+.black-audio-section{background:#fff!important;color:var(--gd-ink)!important}
+.black-audio-title p,.black-audio-title h2 span{color:var(--gd-blue-deep)!important}
+.black-audio-player{background:#f5faff!important;border-color:#bfd5e3!important;color:var(--gd-ink)!important}
+.black-audio-player>span{background:var(--gd-blue)!important;color:#fff!important}
+.black-audio-player i{background:var(--gd-blue-deep)!important}
+
+/* PHOTO GALLERY */
+.black-photo-gallery{background:#f6fbff!important;color:var(--gd-ink)!important}
+.black-photo-gallery h2 span{color:var(--gd-blue)!important}
+.black-photo-gallery figure{background:#fff!important;border:1px solid #dce8f0!important}
+.black-photo-gallery img{object-fit:contain!important;object-position:center top!important;filter:none!important}
+
+/* FOOTER */
+.black-footer,.black-page-footer{background:linear-gradient(135deg,#e2f2fb,#cfe8f6)!important;color:var(--gd-ink)!important;border-top:1px solid #c8dfea!important}
+.black-footer>div span,.black-page-footer div span{color:var(--gd-blue-deep)!important}
+.black-footer section a,.black-page-footer a{border-color:rgba(17,27,37,.45)!important;color:var(--gd-ink)!important}
+
+/* INNER PAGES */
+.black-page{background:#fff!important;color:var(--gd-ink)!important}
+.black-page-back,.black-detail-page .black-page-back{color:var(--gd-ink)!important;background:rgba(255,255,255,.88)!important;border:1px solid rgba(30,111,154,.13)!important;box-shadow:0 8px 28px rgba(44,90,118,.08)!important}
+.black-page-back span{color:var(--gd-blue)!important}
+.black-page-hero,.black-index-hero{background:#fff!important;color:var(--gd-ink)!important}
+.black-page-copy p,.black-page-copy h1 span,.black-index-hero p,.black-index-hero h1 span{color:var(--gd-blue-deep)!important}
+.black-page-image{background:#fff!important}
+.black-page-image img{object-fit:contain!important;object-position:center bottom!important;filter:none!important}
+.black-page-story{background:#f3f9fd!important;color:var(--gd-ink)!important}
+.black-page-story article{border-color:#c9dbe7!important}
+.black-page-story small,.black-page-story h2 span{color:var(--gd-blue-deep)!important}
+.black-about-manifesto{background:#fff!important;color:var(--gd-ink)!important;border-top:1px solid #dce8f0;border-bottom:1px solid #dce8f0}
+.black-about-manifesto>p,.black-about-manifesto h2 span,.black-about-manifesto strong{color:var(--gd-blue-deep)!important}
+.black-about-manifesto>div{border-color:#cddde7!important}
+.black-about-team-link{background:#eef7fc!important;color:var(--gd-ink)!important}
+.black-about-team-link>img{object-fit:contain!important;background:#fff!important}
+.black-about-team-link p,.black-about-team-link h2 span{color:var(--gd-blue-deep)!important}
+.black-about-team-link a{background:var(--gd-blue-deep)!important;color:#fff!important}
+.black-contact-grid{background:#d8e6ef!important}
+.black-contact-grid a{background:#fff!important;color:var(--gd-ink)!important}
+.black-contact-grid small,.black-contact-grid span{color:var(--gd-blue-deep)!important}
+
+/* PERSON PAGES */
+.black-detail-page,.black-detail-hero,.black-detail-image,.black-member-story,.black-member-sticky,.black-member-copy{background:#fff!important;color:var(--gd-ink)!important}
+.black-detail-title p,.black-detail-title h1 span,.black-detail-title strong,.black-member-copy>p,.black-member-copy h2 span{color:var(--gd-blue-deep)!important}
+.black-detail-image img,.black-member-sticky img{object-fit:contain!important;object-position:center top!important;background:#fff!important;filter:none!important}
+.black-member-story{border-top:1px solid #dbe7ef!important}
+.black-member-sticky{border-right:1px solid #dbe7ef!important}
+.black-member-meta,.black-member-copy blockquote{border-color:#c6d9e5!important}
+.black-detail-next{background:#e5f2f9!important;color:var(--gd-ink)!important}
+.black-detail-next b,.black-detail-next small{color:var(--gd-blue-deep)!important}
+
+/* Avoid red/black remnants generated by original tone classes. */
+.gd-snow-photo{background:#fff!important;filter:none!important}
+
+@media (max-width:900px){
+  .black-topbar{background:rgba(255,255,255,.9)!important}
+  .black-layer-bg{content:url('../garmony/light/group-mobile.webp');object-position:center top!important;transform:none!important}
+  .black-hero-title{font-size:clamp(62px,16vw,120px)!important;bottom:12vh!important}
+  .black-h-panel img{opacity:.36!important;object-fit:cover!important;object-position:center!important;width:100%!important;height:100%!important}
+  .black-h-panel h2,.black-h-panel p,.black-h-panel>span,.black-h-panel>a,.black-h-arrow{position:relative;z-index:6}
+  .black-service-panel figure img{object-fit:contain!important;background:#f5faff!important}
+}
+@media (max-width:700px){
+  .black-team-card{box-shadow:none!important}
+  .black-team-card:after{background:linear-gradient(180deg,rgba(255,255,255,0) 58%,rgba(255,255,255,.97) 84%,#fff 100%)!important}
+  .black-horizontal-section{height:auto!important}
+  .black-h-panel img{opacity:.24!important}
+  .black-detail-hero{padding-top:86px!important}
+  .black-detail-image{height:min(72svh,720px)!important}
+}
+
+/* =============================================================
+   HERO STABILITY FIX — 2026-08-16
+   The original BLACK hero used a preserve-3d camera and translateZ layers.
+   In the light edition that 3D stack could conflict with the flat photo and
+   make the first screen appear empty. Keep the rest of the site's motion,
+   but make the first screen deterministic and independent of JS transforms.
+   ============================================================= */
+.black-hero-scene{
+  position:relative!important;
+  isolation:isolate!important;
+  perspective:none!important;
+  background:#f6fbff url('../garmony/hero-background-v2.webp') center center / cover no-repeat!important;
+  overflow:hidden!important;
+}
+.black-scene-camera{
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  transform:none!important;
+  transform-style:flat!important;
+  transition:none!important;
+  will-change:auto!important;
+}
+.black-layer-bg{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  transform:none!important;
+}
+.black-layer-mid{display:none!important}
+.black-hero-title{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  z-index:4!important;
+  left:4vw!important;
+  right:4vw!important;
+  bottom:11vh!important;
+  transform:none!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  color:#172736!important;
+  text-shadow:0 2px 0 rgba(255,255,255,.98),0 8px 28px rgba(255,255,255,.95),0 18px 50px rgba(62,122,158,.18)!important;
+}
+.black-hero-title span{display:inline!important;color:var(--gd-blue)!important}
+.black-hero-copy{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  z-index:6!important;
+  transform:none!important;
+  color:#10202d!important;
+}
+.black-scroll-next{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  z-index:7!important;
+}
+@media (max-width:900px){
+  .black-hero-scene{
+    background-image:url('../garmony/light/group-mobile.webp')!important;
+    background-position:center top!important;
+  }
+  .black-layer-bg{
+    content:url('../garmony/light/group-mobile.webp')!important;
+    object-position:center top!important;
+  }
+  .black-hero-title{
+    left:18px!important;
+    right:18px!important;
+    bottom:17vh!important;
+    white-space:normal!important;
+    font-size:clamp(52px,16vw,92px)!important;
+    line-height:.78!important;
+  }
+  .black-hero-title span{display:block!important}
+  .black-hero-copy{
+    left:18px!important;
+    right:18px!important;
+    bottom:max(24px,calc(16px + env(safe-area-inset-bottom)))!important;
+    text-align:center!important;
+  }
+}
