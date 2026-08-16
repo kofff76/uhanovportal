@@ -1,0 +1,38 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d40d2f"><meta name="description" content="ГармоньDRIVE WEB TV — демонстрационный MVP веб-телевидения."><title>Главная — ГармоньDRIVE WEB TV</title><link rel="stylesheet" href="assets/styles.css"></head><body class=""><a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="topbar">
+  <a class="brand brand--tv" href="index.html" aria-label="ГармоньDRIVE WEB TV — главная">
+    <img src="assets/img/harmony-drive-webtv-logo.webp" alt="ГармоньDRIVE ТВ"><span><strong>ГАРМОНЬDRIVE</strong><small>WEB TV · прямой эфир</small></span>
+  </a>
+  <form class="header-search" data-search-form><input name="q" type="search" placeholder="Поиск по программам и архиву" aria-label="Поиск"><button type="submit" aria-label="Найти">⌕</button></form>
+  <div class="topbar__actions"><span class="mvp-badge"><i></i>MVP DEMO</span><a class="topbar__link" href="schedule.html">Телепрограмма</a><a class="avatar-link" data-auth-link href="login.html" aria-label="Войти">В</a><button class="menu-trigger" data-menu-trigger type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button></div>
+</header><aside class="drawer" data-drawer aria-hidden="true"><div class="drawer__head"><span>WEB TV</span><span>LIVE · ARCHIVE · MVP</span></div><div class="drawer__brand"><span>ГАРМОНЬ</span>DRIVE WEB TV</div><nav class="drawer__nav"><a class="is-current" href="index.html"><small>01</small><span>Главная</span><b>↗</b></a><a class="" href="schedule.html"><small>02</small><span>Телепрограмма</span><b>↗</b></a><a class="" href="catalog.html"><small>03</small><span>Архив</span><b>↗</b></a><a class="" href="channel.html"><small>04</small><span>Каналы</span><b>↗</b></a><a class="" href="cabinet.html"><small>05</small><span>Кабинет</span><b>↗</b></a><a class="" href="profile.html"><small>06</small><span>Профиль</span><b>↗</b></a><a class="" href="studio.html"><small>07</small><span>Эфирная</span><b>↗</b></a><a class="" href="agent.html"><small>08</small><span>AI-редактор</span><b>↗</b></a><a class="" href="about.html"><small>09</small><span>О проекте</span><b>↗</b></a><a class="" href="rules.html"><small>10</small><span>Правила</span><b>↗</b></a></nav><div class="drawer__bottom"><span>Музыка · сцена · эфир</span><span>MVP 2026</span></div></aside><div class="backdrop" data-backdrop hidden></div><main id="main">
+<section class="tv-hero">
+  <img class="tv-hero__image" src="assets/img/tv-group-pearl.webp" alt="Группа ГармоньDrive">
+  <div class="tv-hero__wash"></div><div class="tv-hero__grid"></div>
+  <div class="tv-hero__copy">
+    <div class="tv-live-kicker"><span class="live-dot"></span> WEB TV · MVP DEMO</div>
+    <h1>Гармонь<span>DRIVE</span><em>WEB TV</em></h1>
+    <p>Музыкальное веб‑телевидение в презентационной MVP‑версии: прямой эфир, телепрограмма, архив и личный кабинет.</p>
+    <div class="tv-hero__actions"><a class="button button--red" href="#live">Смотреть эфир <b>↘</b></a><a class="button button--glass" href="schedule.html">Телепрограмма <b>↗</b></a></div>
+  </div>
+  <div class="tv-live-card" id="live">
+    <div class="tv-live-card__top"><span><i></i>СЕЙЧАС В ЭФИРЕ</span><b data-tv-clock>10:35</b></div>
+    <div class="tv-player-demo" data-tv-player><img src="assets/img/tv-concert.webp" alt="Концерт ГармоньDrive"><div class="tv-player-demo__shade"></div><button class="tv-play" type="button" data-tv-play aria-label="Запустить демо-эфир">▶</button><div class="tv-player-demo__status"><span data-live-state>DEMO STREAM</span><strong data-live-title>Большой концерт ГармоньDRIVE</strong></div></div>
+    <div class="tv-live-card__meta"><div><small>LIVE / MUSIC</small><h2 data-live-title>Большой концерт ГармоньDRIVE</h2><p data-live-desc>Сцена, живой звук и главные номера коллектива.</p></div><button class="tv-fav" type="button" data-favorite>＋ В избранное</button></div>
+    <div class="tv-channel-switch" data-channel-switch><button class="is-active" data-channel="main">01 Основной</button><button data-channel="concert">02 Концерты</button><button data-channel="archive">03 Архив+</button></div>
+  </div>
+</section>
+<section class="section tv-section"><div class="section-head"><div><p class="eyebrow">Прямой эфир</p><h2>Сегодня <em>в эфире</em></h2></div><p>Телепрограмма работает как интерактивный MVP: выбор канала и программ сохраняется локально в браузере.</p></div>
+<div class="epg-strip">
+<article class="epg-item is-live"><time>10:30</time><div><small>СЕЙЧАС</small><h3>Большой концерт ГармоньDRIVE</h3><p>Концерт · 55 мин</p></div><span>LIVE</span></article>
+<article class="epg-item"><time>11:25</time><div><small>ДАЛЕЕ</small><h3>За кулисами</h3><p>Документальный цикл · 25 мин</p></div><span>→</span></article>
+<article class="epg-item"><time>11:50</time><div><small>МУЗЫКА</small><h3>Гармонь без рамок</h3><p>Клипы и премьеры · 40 мин</p></div><span>→</span></article>
+<article class="epg-item"><time>12:30</time><div><small>АРХИВ</small><h3>Лучшее за неделю</h3><p>Выбор редакции · 60 мин</p></div><span>→</span></article>
+</div><a class="section-link" href="schedule.html">Открыть полную телепрограмму ↗</a></section>
+<section class="section section--mist tv-section"><div class="section-head"><div><p class="eyebrow">Каналы</p><h2>Три <em>эфирных потока</em></h2></div><p>В реальном запуске каждый поток может быть связан с HLS/RTMP. В MVP переключение демонстрируется локально.</p></div><div class="tv-channel-grid">
+<a class="tv-channel-card tv-channel-card--main" href="channel.html"><span>01</span><div><small>24/7 · ОСНОВНОЙ</small><h3>ГармоньDRIVE</h3><p>Главный эфир: концерты, премьеры, интервью.</p></div></a>
+<a class="tv-channel-card" href="channel.html"><img src="assets/img/tv-group-red.webp" alt="ГармоньDrive"><span>02</span><div><small>LIVE STAGE</small><h3>Концерты</h3><p>Сцена, гастроли и живые выступления.</p></div></a>
+<a class="tv-channel-card" href="catalog.html"><img src="assets/img/tv-gold.webp" alt="Архив ГармоньDrive"><span>03</span><div><small>ON DEMAND</small><h3>Архив+</h3><p>Записи эфиров, клипы и специальные программы.</p></div></a>
+</div></section>
+<section class="section tv-section"><div class="section-head"><div><p class="eyebrow">MVP функционал</p><h2>Можно <em>показать человеку</em></h2></div><p>Ключевой пользовательский путь доступен без сервера: авторизация, профиль, кабинет, избранное, эфирная и AI‑редактор.</p></div><div class="mvp-feature-grid"><article><b>01</b><h3>Вход и регистрация</h3><p>Локальная демо‑сессия и защищённые страницы кабинета.</p></article><article><b>02</b><h3>WEB TV</h3><p>Плеер, каналы, эфирная сетка, переключение и избранное.</p></article><article><b>03</b><h3>Личный кабинет</h3><p>Профиль, напоминания, сохранённые программы и выход.</p></article><article><b>04</b><h3>Редакционная студия</h3><p>Добавление файла и демонстрация подготовки передачи к эфиру.</p></article></div></section>
+<footer class="footer footer--tv"><div class="footer__brand"><span>ГАРМОНЬ</span>DRIVE<br>WEB TV</div><div><p>Демонстрационная версия веб-телевидения: прямой эфир, телепрограмма, архив, личный кабинет и редакционная студия.</p><p>© 2026 · MVP DEMO · Без реального стримингового backend.</p></div><nav><a href="schedule.html">Телепрограмма</a><a href="catalog.html">Архив</a><a href="about.html">О проекте</a></nav></footer></main><script src="assets/app.js"></script></body></html>

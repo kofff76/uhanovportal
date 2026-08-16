@@ -1,0 +1,5 @@
+# Сверить версии с текущим pyproject/requirements MediaCMS и закрепить их.
+httpx
+python-magic
+clamd
+django-redis
